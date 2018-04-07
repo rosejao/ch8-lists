@@ -2,20 +2,21 @@
 
 # Create a *list* of 10 random numbers. Use the `runif()` function to make a 
 # vector of random numbers, then use `as.list()` to convert that to a list
-
+nums <- as.list(runif(10, 1, 100))
 
 # Use `lapply()` to apply the `round()` function to each number, rounding it to 
 # the nearest 0.1 (one decimal place)
-
+lapply(nums, round, 1)
 
 # Create a variable 'sentence' that contains a sentence of text (something 
 # longish). Make the sentence lowercase; you can use a function to help.
+sentence <- tolower("Hello my name is Rose and I am from Pullman")
 
 
 # Use the `strsplit()` function to split the sentence into a vector of letters.
 # Hint: split on `""` to split every character
 # Note: this will return a _list_ with 1 element (which is the vector of letters)
-
+letters_list <- strsplit(sentence, "")
 
 # Extract the vector of letters from the resulting list
 
